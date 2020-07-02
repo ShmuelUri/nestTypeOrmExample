@@ -1,6 +1,13 @@
-export class TodoEntity
- { 
-     id: string; 
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+
+@Entity()
+export class TodoEntity{ 
+    @PrimaryGeneratedColumn()
+     id: number; 
+
+     @Column()
      name: string;
-     description?: string;
+
+     @Column()
+     description: string;
     }

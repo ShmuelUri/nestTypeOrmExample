@@ -1,6 +1,6 @@
 export class TodoDto 
 {  
-    id: string; 
+    id: number; 
     name: string; 
     description?: string;
 }
